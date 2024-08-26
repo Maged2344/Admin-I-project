@@ -79,54 +79,54 @@ Ensure all users can work remotely via SSH.
 
 ### Steps:
 1. **Install OpenSSH Server**
-
+```
 sudo apt update
 sudo apt install openssh-server
-
+```
 
 2. **Enable and Start SSH Service**
-
+```
 sudo systemctl enable ssh
 sudo systemctl start ssh
-
+```
 3. **Check SSH Configuration**
-
+```
 sudo nano /etc/ssh/sshd_config
-
+```
 4. **Configure the Firewall (if applicable)**
-
+```
 sudo ufw allow ssh
-
+```
 ## 5. Archive Log Files
 
 Archive all log files and store the archive in the root home directory.
 
 ### Steps:
 1. **Create the Archive**
-
+```
 sudo tar -czvf /root/logs_archive.tar.gz /var/log/*
-
+```
 2. **Verify the Archive**
-
+```
 sudo tar -tzvf /root/logs_archive.tar.gz
-
+```
 ## 6. Install Google Chrome Browser
-
+```
 Install Google Chrome on the system.
-
+```
 ### Steps:
 1. **Download the .deb Package**
-
+```
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-
+```
 2. **Install the Package**
-
+```
 sudo dpkg -i google-chrome-stable_current_amd64.deb
-
+```
 3. **Fix Any Dependency Issues**
-
+```
 sudo apt-get install -f
-
+```
 
 # Summary
 This document provides an overview of configuring a system with password policies, user management, workspace permissions, remote access, log file archiving, and software installation. Follow the provided steps to implement these configurations on your Ubuntu system.
