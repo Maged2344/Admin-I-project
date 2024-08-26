@@ -111,9 +111,9 @@ sudo tar -czvf /root/logs_archive.tar.gz /var/log/*
 sudo tar -tzvf /root/logs_archive.tar.gz
 ```
 ## 6. Install Google Chrome Browser
-```
+
 Install Google Chrome on the system.
-```
+
 ### Steps:
 1. **Download the .deb Package**
 ```
